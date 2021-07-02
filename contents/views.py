@@ -134,3 +134,7 @@ def newCategory(request):
             Category = request.POST['name']
             return redirect('myMap', Category) #myMap함수를 다시 호출함 => 아래줄의  return render(request, 'newCategory.html', {'form': tempForm})가 실행됩니다
         return render(request, 'newCategory.html', {'form': tempForm}) #newCategory.html이 실행됩니다
+
+    
+  def ourMap(request):
+       return render(request, 'ourMap.html')
