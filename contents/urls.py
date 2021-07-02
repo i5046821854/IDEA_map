@@ -11,4 +11,5 @@ urlpatterns = [
     path('delete/<str:content_id>', deletePlace, name = "deletePlace"),
     path('myMap/<str:Category>', myMap, name = "myMap"),
     path('newCategory/', newCategory, name = "newCategory"),
+    path('ourMap/', ourMap, name="ourMap"),
 ]
